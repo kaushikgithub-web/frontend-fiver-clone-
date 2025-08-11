@@ -29,7 +29,7 @@ const GigList = () => {
     const fetchGigs = async () => {
       try {
         setLoading(true);
-        const res = await axios.get('http://localhost:3001/api/gigs');
+        const res = await axios.get('https://server-fever-clone.onrender.com/api/gigs');
         console.log('Fetched gigs:', res.data);
         setAllGigs(res.data);
         setFilteredGigs(res.data);
